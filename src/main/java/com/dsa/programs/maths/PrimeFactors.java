@@ -10,6 +10,7 @@ public class PrimeFactors {
 
 	}
 
+	// time complexity big O( theta (rot of n )
 	private static void primefact(int n) {
 		if (n < 1) {
 			System.out.println(" blank ");
@@ -44,6 +45,7 @@ public class PrimeFactors {
 		}
 
 		if (n > 3) {
+			// as 2 and 3 are already handled above we need to check for greater than 3 if occurs 
 			System.out.println(n);
 		}
 

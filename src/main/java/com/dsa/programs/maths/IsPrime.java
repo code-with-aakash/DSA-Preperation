@@ -23,6 +23,7 @@ public class IsPrime {
 
 	}
 
+	// time complexity is big O sqrt n 
 	private static boolean primeNo(int n) {
 		for (int i = 2; i * i <= n; i++) {
 

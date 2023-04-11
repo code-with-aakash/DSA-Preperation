@@ -8,8 +8,6 @@ public class PalindromeNo {
 		boolean n = false;
 
 		int x = 121;
-		
-		
 
 		boolean xyz = palin(x, n);
 
