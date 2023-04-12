@@ -4,7 +4,7 @@ public class PrimeFactors {
 
 	public static void main(String[] args) {
 
-		int n = 0;
+		int n = 23;
 
 		primefact(n);
 
@@ -45,7 +45,8 @@ public class PrimeFactors {
 		}
 
 		if (n > 3) {
-			// as 2 and 3 are already handled above we need to check for greater than 3 if occurs 
+			// as 2 and 3 are already handled above we need to check for greater than 3 if
+			// occurs
 			System.out.println(n);
 		}
 
