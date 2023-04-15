@@ -7,8 +7,6 @@ public class TotalSetBits {
 		int n = 17;
 		int countsetbits = 0;
 
-		
-
 		System.out.println(countsetbits);
 
 	}
