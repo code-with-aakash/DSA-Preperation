@@ -4,28 +4,30 @@ public class PowerOfNo {
 
 	public static void main(String[] args) {
 
-		int x = 2;
-		int n = 4;
-		int sqr = pwer(x, n);
+		long x = 24;
+		long n = 42;
+		long sqr = pwer(x, n);
 		System.out.println(sqr);
 
 	}
 
-	static int pwer(int x, int n) {
+	static long pwer(long x, long n) {
 
 		if (n == 0) {
 			return 1;
 		}
 
-		int pw = pwer(x, n / 2);
+		long pw = pwer(x, n / 2);
 
-		pw = pw * pw;
+		pw = (pw * pw) % 1000000007;
+
+		System.out.println(pw);
 
 		if (n % 2 == 0) {
 
-			return pw;
+			return pw % 1000000007;
 		} else
-			return pw * x;
+			return (pw * x) % 1000000007;
 
 	}
 
