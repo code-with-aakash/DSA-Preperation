@@ -4,9 +4,7 @@ public class SubSetOfString {
 
 	public static void main(String[] args) {
 
-		String s = "AB";
-
-		int psize = (int) Math.pow(2, s.length());
+		String s = "ABC";
 
 		String curr = "";
 		int i = 0;

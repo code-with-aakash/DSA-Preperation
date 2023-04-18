@@ -3,9 +3,9 @@ package com.dsa.programs.maths;
 public class TermOfGP {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		// Your code here
+		// formula is ar^n-1
 		int A = 84, B = 87, N = 3;
 
 		double r = (double )B / A ;

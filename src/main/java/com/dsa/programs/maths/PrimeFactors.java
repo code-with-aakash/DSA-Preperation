@@ -4,7 +4,12 @@ public class PrimeFactors {
 
 	public static void main(String[] args) {
 
-		int n = 23;
+		int n = 20;
+
+		// Prime factor is the factor of the given number which is a prime number.
+		// Factors are the numbers you multiply together to get another number. In
+		// simple words, prime factor is finding which prime numbers multiply together
+		// to make the original number.
 
 		primefact(n);
 

@@ -8,6 +8,9 @@ public class SieveOfErothstheness {
 
 		int n = 10;
 
+		// Given a number n, print all primes smaller than or equal to n. It is also
+		// given that n is a small number.
+
 		boolean[] prime = new boolean[n + 1];
 		Arrays.fill(prime, true);
 		for (int p = 2; p * p <= n; p++) {
