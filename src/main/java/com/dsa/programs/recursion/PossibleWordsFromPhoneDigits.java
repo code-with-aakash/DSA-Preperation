@@ -1,38 +1,39 @@
 package com.dsa.programs.recursion;
 
-public class AllPermutation {
+public class PossibleWordsFromPhoneDigits {
 
 	public static void main(String[] args) {
 
-		// the idea here is that first we fix starting letter of string and shift other
-		// two letters and same goes for other values of string
+		int N = 3;
 
-		String s = "ABCD";
-		
+		int a[] = { 2, 3, 4 };
+//		String s = "ABC";
+
 		int i = 0;
+		String s = "ABCDEFGHI";
 
-		perm(s, i);
+		perm(s, i, N);
 
 	}
 
-	private static void perm(String s, int i) {
+	private static void perm(String s, int i, int n) {
 
 		// here the base case is that if length of string and counter i is same then we
 		// print that value
 
-		if (i == s.length() - 1) {
+		if (i == 2) {
 			System.out.println(s);
 			return;
 		}
 
-		for (int j = i; j < s.length(); j++) {
+		for (int j = i; j < n; j++) {
 
 			// here we are swapping char of string and returning the swapped value string
 			// for next permutation
 
 			s = swap(s, i, j);
 
-			perm(s, i + 1);
+			perm(s, i + 1, n);
 
 			// here we are swapping char of string and returning the original string for
 			// next perm

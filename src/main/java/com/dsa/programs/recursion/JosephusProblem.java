@@ -27,7 +27,7 @@ public class JosephusProblem {
 		if (n == 1) {
 			return 0;
 		} else
-			// here we divide values by n as at one position our circle will get bigger than
+			// here we take modulus by n as at one position our circle will get bigger than
 			// n
 			return (jos(n - 1, k) + k) % n;
 

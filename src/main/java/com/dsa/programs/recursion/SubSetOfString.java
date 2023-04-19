@@ -20,7 +20,10 @@ public class SubSetOfString {
 			return;
 		}
 
+		// here we include element 
 		subsets(s, curr, i + 1);
+		
+		// here we dont include element
 		subsets(s, curr + s.charAt(i), i + 1);
 
 	}

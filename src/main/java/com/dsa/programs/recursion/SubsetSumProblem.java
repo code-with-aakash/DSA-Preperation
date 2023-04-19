@@ -18,7 +18,8 @@ public class SubsetSumProblem {
 
 		// here we are decrementing each value from array and to check if we have that
 		// value or not and decrementing the length of array 
-
+		// in the first part we don't include the element as single no is also subset of given set  
+		// in second part we include the element 
 		return countSubsets(arr, n - 1, sum) + countSubsets(arr, n - 1, sum - arr[n - 1]);
 	}
 }
