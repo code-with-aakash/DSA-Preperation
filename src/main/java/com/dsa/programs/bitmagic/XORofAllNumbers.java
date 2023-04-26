@@ -14,7 +14,7 @@ public class XORofAllNumbers {
 
 		System.out.println(sum);
 
-		// better solution
+		// better solution this is of different question
 
 //		if (n % 4 == 0) {
 //			System.out.println(n);
