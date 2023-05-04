@@ -5,7 +5,7 @@ public class FibonacciSeries {
 	public static void main(String[] args) {
 
 		
-		int n =0 ;
+		int n =50 ;
 		int x = fibonacci(n);
 		
 		System.out.println(x);

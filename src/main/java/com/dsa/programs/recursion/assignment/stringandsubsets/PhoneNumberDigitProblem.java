@@ -6,7 +6,8 @@ public class PhoneNumberDigitProblem {
 
 	public static void main(String[] args) {
 
-		String up = "8";
+		// digit is from 2 to 9 
+		String up = "23";
 
 		System.out.println(pemutationofdigits("", up));
 

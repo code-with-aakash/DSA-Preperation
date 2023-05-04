@@ -6,21 +6,29 @@ public class Sumtrianglefromarray {
 
 		int[] A = { 1, 2, 3, 4, 5 };
 		int n = 5;
-		int i = n - 1;
-		int curr = 0;
-		sumTraingle(A, n, curr, i);
+		int i = n ;
+
+		sumTraingle(A, n, i);
 
 	}
 
-	private static void sumTraingle(int[] a, int n, int curr, int i) {
+	private static void sumTraingle(int[] a, int n, int i) {
 
-		if (curr == 0) {
-			
-			System.out.println("no");
+		if (i == 0) {
+
+			System.out.println("last element is >>"+a[i]);
+			return;
+
 
 		}
 
-		sumTraingle(a, n, a[i] + a[i - 1], i);
+		for (int j =0 ; j<i-1;j++){
+
+			a[j]=a[j]+a[j+1];
+		}
+
+
+		 sumTraingle(a, n, i-1);
 
 	}
 

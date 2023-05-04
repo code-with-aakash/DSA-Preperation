@@ -2,35 +2,26 @@ package com.dsa.programs.maths;
 
 public class HappyNumber {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        int num = 14 ;
+		int num = 14;
 
+		happynum(num);
 
+	}
 
-        happynum(num);
+	public static void happynum(int num) {
 
-    }
+		if (num < 10) {
+			System.out.println(false);
+		}
 
-    public static void happynum(int num ){
+		int num2 = 0;
 
-        if(num<10){
-            System.out.println(false);
-        }
+		while (num != 0) {
+			int num3 = num % 10;
 
-        int num2  =0;
+		}
 
-        
-            while (num!=0) {
-                int num3 = num % 10;
-
-            }
-        return num3*num3;
-
-
-
-
-
-
-    }
+	}
 }
