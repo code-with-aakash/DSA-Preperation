@@ -1,4 +1,4 @@
-package com.kunal;
+package com.dsa.programs.searching.binarysearch.kunalcode;
 
 public class OrderAgnosticBS {
     public static void main(String[] args) {

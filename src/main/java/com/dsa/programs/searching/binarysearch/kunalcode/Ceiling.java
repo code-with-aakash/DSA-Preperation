@@ -1,4 +1,4 @@
-package com.kunal;
+package com.dsa.programs.searching.binarysearch.kunalcode;
 
 public class Ceiling {
 

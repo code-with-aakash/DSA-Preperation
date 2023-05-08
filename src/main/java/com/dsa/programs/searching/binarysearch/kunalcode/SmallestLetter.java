@@ -1,4 +1,4 @@
-package com.kunal;
+package com.dsa.programs.searching.binarysearch.kunalcode;
 // https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 public class SmallestLetter {
 

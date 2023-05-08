@@ -1,4 +1,4 @@
-package com.dsa.programs.searching;
+package com.dsa.programs.searching.binarysearch;
 
 public class Ceiling {
 
