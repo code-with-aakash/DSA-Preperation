@@ -5,8 +5,8 @@ public class SearchInRotatedSortedDuplicateArray {
     public static void main(String[] args) {
 
 
-        int[] nums = {1,2};
-        int target = 2;
+        int[] nums = {1,2,2,3,4,4};
+        int target = 4;
 
         System.out.println(search(nums,target));
 
@@ -71,7 +71,7 @@ public class SearchInRotatedSortedDuplicateArray {
 
             if(arr[mid]==arr[start] && arr[mid]==arr[end]){
 
-                if(arr[start]>arr[start+1]){
+                if(start<end && arr[start]>arr[start+1]){
 
                     return start;
                 }

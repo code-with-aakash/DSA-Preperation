@@ -15,7 +15,7 @@ public class LL {
 		this.size = size;
 	}
 
-	private class Node {
+	public class Node {
 
 		private int val;
 
@@ -150,6 +150,26 @@ public class LL {
 		return val;
 
 	}
+	public int deleteNode(int index) {
+
+		Node temp = head;
+		Node last = head;
+		int count = 0;
+
+		while (last != null) {
+			{
+				last = last.next;
+				count++;
+			}
+
+		}
+		Node secondLast = get(count - index - 1);
+
+		secondLast.next = secondLast.next.next;
+
+		return secondLast.val;
+
+	}
 
 	public Node find(int value) {
 		Node node = head;
@@ -162,5 +182,78 @@ public class LL {
 		}
 		return null;
 	}
+
+	// insert using recursion
+	public void insertRec(int val, int index) {
+
+		head = insertRec(val, index, head);
+	}
+
+	private Node insertRec(int val, int index, Node node) {
+
+		if (index == 0) {
+			Node temp = new Node(val, node);
+			size++;
+			return temp;
+		}
+
+		node.next = insertRec(val, --index, node.next);
+		return node;
+
+	}
+
+	// removeduplicates
+
+	public void removeDuplicates() {
+
+		Node node = head;
+
+		while (node.next != null) {
+
+			if (node.val == node.next.val) {
+				node.next = node.next.next;
+			} else {
+				node = node.next;
+			}
+
+		}
+		size--;
+		tail = node;
+		tail.next = null;
+
+	}
+
+	// merge two list
+	public LL merge(LL first, LL second) {
+		Node f = first.head;
+		Node s = second.head;
+
+		LL ans = new LL();
+
+		while (f != null && s != null) {
+
+			if (f.val < s.val) {
+				ans.insertLast(f.val);
+				f = f.next;
+			} else {
+				ans.insertLast(s.val);
+				s = s.next;
+			}
+		}
+
+		while (f != null) {
+			ans.insertLast(f.val);
+			f = f.next;
+		}
+
+		while (s != null) {
+			ans.insertLast(s.val);
+			s = s.next;
+		}
+		return ans;
+
+	}
+
+	
 
 }
