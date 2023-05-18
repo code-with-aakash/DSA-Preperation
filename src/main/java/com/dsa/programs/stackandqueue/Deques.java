@@ -15,7 +15,8 @@ public class Deques {
         q.add(25);
         q.add(15);
         System.out.println(q.remove());
-//        q.add(null);
+        // does not allow null
+        // q.add(null);
         q.addFirst(54);
         q.addLast(59);
         System.out.println(q.removeFirst());

@@ -6,10 +6,10 @@ public class Stacks {
 
     public static void main(String[] args) throws StackException {
 
-//        Stack <Integer> st = new Stack <>();
+        Stack <Integer> st = new Stack <>();
 //
 //        st.setSize(2);
-//        st.push(1);
+        st.push(1);
 //        System.out.println(st.pop());
 //        st.push(89);
 //        st.push(89);
