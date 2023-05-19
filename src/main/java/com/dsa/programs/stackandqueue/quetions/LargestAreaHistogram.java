@@ -1,28 +1,27 @@
  package com.dsa.programs.stackandqueue.quetions;
 
-import java.util.Arrays;
-import java.util.Stack;
+ import java.util.Stack;
 
 /*
         Intuition:
-        here we calculate Area by calculating the length between largest left element and largets right element of array index and multiplying that by hieht of the index element.
+        here we calculate Area by calculating the length between the largest left element and largets right element of array index and multiplying that by hieht of the index element.
 
         Approach:
-        Approach is we are calculating the area of rectangle while poping the element out from the stack .
+        Approach is we are calculating the area of rectangle while popping the element out from the stack .
         step 1 : Run the for loop from i 0 to length of array
         step 2 : As first as stack is empty we push the index of first element in stack .
         step 3 : now check if stack is empty or not and after that check if the element in array with index present in stack is greater or not if it is greater pop the index .
         step 4 : now calculate the area by
 
         formula: curr = arr[temp]*(sk.isEmpty()?i:(i-sk.peek()-1))
-        a.here temp is the index you poped out from the stack .
-        b.i is the index of current element which is smaller than the peak index element from array .
-        c.sk.peek is the index which is the top elemeent which is left in the stack after you pop the top index from stack
+        a.here temp is the index you popped out from the stack .
+        b.I will be the index of current element which is smaller than the peak index element from array .
+        c.sk.peek is the index which is the top element which is left in the stack after you pop the top index from stack
         d. if after you pop the index from stack and stack becomes empty means there is no element greater than the current element hence return the current element height by i*arr[temp].
         e. else calculate the index with the formula (i-sk.peek()-1)
         and calculate area by multiplying the index with arr[temp]
         f. now do the same for all elements of array and return the maximum result obtained .
-        h . in the last we are calculating the area of elements left in the stacks and for them the largest elemnt on right side is the length of array hence formula is
+        h . in the last we are calculating the area of elements left in the stacks and for them the largest element on right side is the length of array hence formula is
         (n-sk.peek()-1))
         */
 
@@ -76,13 +75,13 @@ public class LargestAreaHistogram {
                 arr2[i]=-1;
 
             }else {
-                // here we print the peek element i.e snmaller elemnt
+                // here we print the peek element i.e smaller element
 //                System.out.print(" " + st.peek());
                 arr2[i]=st.peek();
             }
 
 
-            // here we push the elemnt in stack
+            // here we push the element in stack
             st.push(i);
         }
 
@@ -112,7 +111,7 @@ public class LargestAreaHistogram {
             st.push(i);
 
         }
-        System.out.println("stack is "+st.toString());
+        System.out.println("stack is "+ st);
         return arr3;
     }
 

@@ -1,6 +1,5 @@
 package com.dsa.programs.stackandqueue.quetions;
 
-import java.util.Arrays;
 import java.util.Stack;
 
 public class StockSpanProblem {
@@ -24,11 +23,11 @@ public class StockSpanProblem {
             st.push(i);
         }
 
-        Stack<int[]> sk = new Stack <>();
-
-        sk.push(new int[]{1});
-        sk.pop();
-        sk.peek();
+//        Stack<int[]> sk = new Stack <>();
+//
+//        sk.push(new int[]{1});
+//        sk.pop();
+//        sk.peek();
 
 
         // brute force solution

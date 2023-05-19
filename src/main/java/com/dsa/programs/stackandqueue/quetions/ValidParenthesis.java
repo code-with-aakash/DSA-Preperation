@@ -13,27 +13,25 @@ public class ValidParenthesis {
         char[] c = s.toCharArray();
         Stack<Character> st = new Stack <>();
 
-        for (int i = 0; i < c.length; i++) {{
+        for (char value : c) {
+            {
 
-            if (isOpening(c[i])){
-                st.push(c[i]);
-            } else if (st.isEmpty()) {
-                System.out.println("invalid");
-            } else if(!st.empty()&& st.peek()==isClosing(c[i])){
-                System.out.println("valid");
-                System.out.println(st.pop());;
-            }else{
-                System.out.println("invalid");
+                if (isOpening(value)) {
+                    st.push(value);
+                } else if (st.isEmpty()) {
+                    System.out.println("invalid");
+                } else if (!st.empty() && st.peek() == isClosing(value)) {
+                    System.out.println("valid");
+                    System.out.println(st.pop());
+                } else {
+                    System.out.println("invalid");
+                }
             }
-        }
 
         }
     }
     static boolean isOpening(char c){
-    if (c=='(' || c=='{' || c=='['){
-        return true;
-    }
-    return false;
+        return c == '(' || c == '{' || c == '[';
 
 
     }
