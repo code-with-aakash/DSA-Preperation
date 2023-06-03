@@ -8,6 +8,7 @@ public class LambdaExpression {
 
 
         // lambda function
+        // biConsumer accepts twi integer argument and returns nothing .
         BiConsumer<Integer,Integer> bi  =(a, b) -> System.out.println(a+b);
         bi.accept(10,5);
 

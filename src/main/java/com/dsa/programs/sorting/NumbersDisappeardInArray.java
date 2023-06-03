@@ -8,7 +8,7 @@ public class NumbersDisappeardInArray {
 
 	public static void main(String[] args) {
 
-		int[] arr = { 7,8,9,11,12};
+		int[] arr = { 4,3,2,7,8,2,3,1};
 		System.out.println(cyclic(arr));
 
 	}

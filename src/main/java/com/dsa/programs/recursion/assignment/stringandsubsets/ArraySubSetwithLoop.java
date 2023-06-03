@@ -13,9 +13,9 @@ public class ArraySubSetwithLoop {
 
 	}
 
-	private static List<ArrayList<Integer>> subset(int[] a) {
+	private static List<List<Integer>> subset(int[] a) {
 
-		List<ArrayList<Integer>> outerlist = new ArrayList<>();
+		List<List<Integer>> outerlist = new ArrayList<>();
 
 		// first empty list created
 		outerlist.add(new ArrayList<Integer>());
@@ -32,7 +32,7 @@ public class ArraySubSetwithLoop {
 				// here we create the size of the inner list with outer list including its
 				// element now we run inner loop and we either accept or reject the element but
 				// here we accept only the elements and add that in outer loop list
-				ArrayList<Integer> internal = new ArrayList<>(outerlist.get(i));
+				List<Integer> internal = new ArrayList<>(outerlist.get(i));
 				internal.add(num);
 				outerlist.add(internal);
 			}

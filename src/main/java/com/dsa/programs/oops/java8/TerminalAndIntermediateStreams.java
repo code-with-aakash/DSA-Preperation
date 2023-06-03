@@ -2,7 +2,6 @@ package com.dsa.programs.oops.java8;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class TerminalAndIntermediateStreams {
@@ -19,21 +18,23 @@ public class TerminalAndIntermediateStreams {
 
         List<Integer> intList = Arrays.asList(1,2,3,4,5);
 
-        intList.stream().filter(a->a%2==0).map(a->a+a).filter(a->a>5).count();
+        System.out.println(intList.stream().filter(a->a%2==0).map(a->a+a).filter(a->a>5).count());
 
         emplist.stream().filter(e->e.getId()%2==0).map(e->{         // here { bracket is for changing the type of object from e to anything else
             e.PrintName(); // this is just method call
-            return e.getCode(); // here e is replaced with e.getcode
+            return e.getCode(); // here e is replaced with e.getCode
 //            return e;
         }).forEach(e-> System.out.println("At last "+e));
 
         // if remove foreach method nothing wil be printed as terminal operator is required to print anything in stream .
 
         // peek is used for debugging purpose only
-        System.out.println(intList.stream().filter(a->a%2==0).map(a->a+a).peek(System.out::println).filter(a->a>5).count());;
+        System.out.println(intList.stream().filter(a->a%2==0).map(a->a+a).peek(System.out::println).filter(a->a>2).count());
 
          // reduce
+//        System.out.println(intList.stream().reduce(Integer::sum).get());
         System.out.println(intList.stream().reduce((a,b)->a+b).get());
+
 
         // joining and returning as String
         System.out.println(emplist.stream().map(e->e.getCode().toUpperCase()).collect(Collectors.joining(",")));

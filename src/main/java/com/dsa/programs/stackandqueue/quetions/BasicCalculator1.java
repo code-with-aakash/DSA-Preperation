@@ -6,7 +6,6 @@ public class BasicCalculator1 {
 
     public static void main(String[] args) {
 
-
         String s = "1-(     -2)";
         Stack < Integer > sk = new Stack <>();
         int sign = 1;

@@ -7,10 +7,10 @@ public class SuuplierFunction {
 
     public static void main(String[] args) {
 
-        // suplier function accepts no argument and only returns the output whatever you pass in it .
-        // no chining is required in supplier functional interface.
+        // supplier function accepts no argument and only returns the output whatever you pass in it .
+        // no chaining is required in supplier functional interface.
 
-        Supplier< Date> ar = () -> new Date();
+        Supplier< Date> ar = Date::new;
 
         System.out.println(ar.get());
 

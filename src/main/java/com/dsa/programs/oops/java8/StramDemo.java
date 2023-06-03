@@ -31,7 +31,7 @@ public class StramDemo {
 
         s.forEach(x-> System.out.print(x+" "));
 
-        System.out.println();
+        System.out.println("break");
 
         // above two line converted in single line
         list.stream().filter(i -> i>20).forEach(i-> System.out.print(i+" "));
@@ -49,13 +49,13 @@ public class StramDemo {
 
         System.out.println();
 
-        list.stream().map(i->i+i).filter(i->i>50).forEach(x-> System.out.println(x));
+        list.stream().map(i->i+i).filter(i->i>50).forEach(System.out::println);
 
         System.out.println();
 
 
 
-        list.stream().map(i-> i*i).distinct().sorted().forEach(x-> System.out.println(x));
+        list.stream().map(i-> i*i).distinct().sorted().forEach(System.out::println);
 
         System.out.println(list.stream().map(i-> i*i).count());
 

@@ -10,9 +10,10 @@ public interface FunctionalInterfaceExample {
         System.out.println("this is void function ");
     }
 
-    // only 1 abstracxt method
+    // only 1 abstract method
     public void remove();
 
+    // second default method
     public default void rem(){
         System.out.println("you are genius");
     }
