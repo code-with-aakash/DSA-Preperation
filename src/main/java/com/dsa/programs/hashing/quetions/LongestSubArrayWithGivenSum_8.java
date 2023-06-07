@@ -13,7 +13,7 @@ public class LongestSubArrayWithGivenSum_8 {
         // naive method
         for (int i = 0; i < arr.length; i++) {
             int pre_sum=0;
-            for (int j = i; j < arr.length; j++) {
+            for (int j = i; j < arr. length; j++) {
                 pre_sum+=arr[j];
                 if(pre_sum==sum){
                     res = Math.max(res,j-i+1);

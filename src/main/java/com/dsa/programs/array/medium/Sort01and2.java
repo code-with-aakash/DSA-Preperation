@@ -1,4 +1,4 @@
-package com.java.basic.programs.array.medium;
+package com.dsa.programs.array.medium;
 
 public class Sort01and2 {
 

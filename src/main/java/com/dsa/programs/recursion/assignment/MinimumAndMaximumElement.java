@@ -1,7 +1,5 @@
 package com.dsa.programs.recursion.assignment;
 
-import com.sun.beans.editors.IntegerEditor;
-
 public class MinimumAndMaximumElement {
 
     public static void main(String[] args) {

@@ -11,12 +11,16 @@ class HashDemo{
         MyHash hs = new MyHash(7);
         hs.insert(10);
         hs.insert(20);
+        hs.insert(21);
+        hs.insert(49);
 //        hs.insert(20);
 //        hs.insert(20);
+        System.out.println(hs.table);
         System.out.println(hs.search(10));
         System.out.println(hs.search(5));
         System.out.println(hs.remove(10));
         System.out.println(hs.remove(20));
+
 
 
 

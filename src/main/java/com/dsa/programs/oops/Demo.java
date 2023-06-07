@@ -46,11 +46,6 @@ public class Demo implements Cloneable{
         return super.clone();
     }
 
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
-    }
-
     public int getAge() {
         return age;
     }
