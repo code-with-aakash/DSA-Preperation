@@ -230,7 +230,11 @@ class BinarySearchtree {
 
     public void levelOrderTraversalLinebyLine() {
         levelOrderTraversalLinebyLine(root);
+
     }
+
+
+
 
     public void levelOrderTraversalLinebyLine(Node node) {
         Queue < Node > q = new LinkedList <>();
@@ -252,6 +256,7 @@ class BinarySearchtree {
             }
             if (curr.right != null) {
                 q.add(curr.right);
+                int max = Integer.MIN_VALUE;
 
             }
         }
@@ -542,7 +547,7 @@ class BinarySearchtree {
     int res=0;
     public int height2(Node node){
 
-        if(node==null){
+       if(node==null){
             return 0;
         }
 
@@ -554,6 +559,60 @@ class BinarySearchtree {
         return 1+Math.max(lh,rh);
 
     }
+
+    // minimum depth
+
+    public int minDepth(){
+        return minDepth(root);
+    }
+
+    public int minDepth(Node root) {
+
+        if(root == null) return 0;
+        int left = minDepth(root.left);
+        int right = minDepth(root.right);
+        return (left == 0 || right == 0) ? left + right + 1: Math.min(left,right) + 1;
+
+
+    }
+
+
+
+        // efficient solution
+
+    public int minDepth2() {
+
+        return minDepth2(root);
+    }
+    public int minDepth2(Node root) {
+
+            if (root == null) {
+                return 0;
+            }
+            LinkedList<Node> queue = new LinkedList<>();
+            queue.add(root);
+            int depth = 1;
+            while(!queue.isEmpty()) {
+                int size = queue.size();
+                for (int i = 0; i < size; i++) {
+                    Node curr = queue.removeFirst();
+                    if (curr.left == null && curr.right == null) {
+                        return depth;
+                    }
+                    if (curr.left != null) {
+                        queue.add(curr.left);
+                    }
+                    if (curr.right != null) {
+                        queue.add(curr.right);
+                    }
+                }
+                depth++;
+            }
+
+            return depth;
+    }
+
+
 
     // inorder preorder traversal to binary tree construction
 //    Pick an element from Preorder. Increment a Preorder Index Variable (preIndex in below code) to pick the next element in the next recursive call.
@@ -682,6 +741,7 @@ class BinarySearchtree {
             return -1;
         }
 
+
         for (int i = 0; i < path_1.size()&& i<path_2.size(); i++) {
 
             if(path_1.get(i)== path_2.get(i)){
@@ -712,7 +772,7 @@ class BinarySearchtree {
 
     }
 
-    // LCA wfficient solution
+    // LCA efficient solution
     public Node lcaEfficient(int n1,int n2){
 
         return lcaEfficient(root,n1,n2);
@@ -809,7 +869,7 @@ class Main {
         System.out.println(bst.sizeOfTree2());
         System.out.println();
         System.out.println(bst.maximum());
-        System.out.println();
+        System.out.println("left binary tree");
         bst.leftBinaryTree();
         System.out.println();
         bst.rightBinaryTree();
