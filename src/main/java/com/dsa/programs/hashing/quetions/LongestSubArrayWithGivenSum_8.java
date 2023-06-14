@@ -45,6 +45,7 @@ public class LongestSubArrayWithGivenSum_8 {
             }
 
         }
+        res=(res==Integer.MAX_VALUE) ? 0:res;
         System.out.println(res);
 
     }

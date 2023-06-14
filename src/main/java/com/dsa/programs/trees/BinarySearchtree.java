@@ -408,23 +408,7 @@ class BinarySearchtree {
         rightBinaryTree(node.left,level+1);
     }
 
-    public void topBinaryTree(){
-        topBinaryTree(root,0);
-    }
-    int toptlevel=0;
-    public void topBinaryTree(Node node,int level){
 
-        if(node==null){
-            return;
-        }
-        if(toptlevel==level){
-            System.out.print(node.value);
-            toptlevel=level;
-        }
-
-        topBinaryTree(node.right,level+1);
-        topBinaryTree(node.left,level+1);
-    }
 
     public boolean childrenSum(){
         return  childrenSum(root);
@@ -486,11 +470,12 @@ class BinarySearchtree {
         return head;
     }
 
-    public Node BtToLL() {
-        Node nd = BtToLL(root);
-        printList(nd);
-        System.out.println("value is " +nd.value);
-         return BtToLL(root);
+    public void BtToLL() {
+
+        BtToLL(root);
+        printList(root);
+
+
     }
     void printList(Node node)
     {
@@ -503,22 +488,23 @@ class BinarySearchtree {
 
 
 
-    public Node BtToLL(Node node) {
+    public void BtToLL(Node root) {
 
-        if (node == null) {
-            return node;
-        }
 
-        Node head=node;
-        if(node.left==null){
-            head = node;
-        }
-        head.right=BtToLL(node.left);
-        head.left=null;
-        head.right=BtToLL(node.right);
-        head.left=null;
-        System.out.println(head);
-        return head;
+        if (root == null) return ;
+
+        Node left = root.left;
+        Node right = root.right;
+
+        root.left = null;
+
+        BtToLL(left);
+        BtToLL(right);
+
+        root.right = left;
+        Node cur = root;
+        while (cur.right != null) cur = cur.right;
+        cur.right = right;
 
     }
 
@@ -539,7 +525,7 @@ class BinarySearchtree {
 
     }
 
-    // efficient solution which computes heights and diametere at same time
+    // efficient solution which computes heights and diameter at same time
     public int height2(){
         return height2(root);
     }
@@ -555,7 +541,7 @@ class BinarySearchtree {
         int rh = height2(node.right);
 
         res= Math.max(res,lh+rh+1);
-        System.out.println("response is "+res);
+        System.out.print("response is "+res);
         return 1+Math.max(lh,rh);
 
     }
@@ -773,9 +759,10 @@ class BinarySearchtree {
     }
 
     // LCA efficient solution
-    public Node lcaEfficient(int n1,int n2){
+    // here assumption is both n1 and n2 should be present in tree else it will give wrong answer
+    public int lcaEfficient(int n1,int n2){
 
-        return lcaEfficient(root,n1,n2);
+        return lcaEfficient(root,n1,n2).value;
     }
 
     public Node lcaEfficient(Node node,int n1,int n2){
@@ -873,18 +860,17 @@ class Main {
         bst.leftBinaryTree();
         System.out.println();
         bst.rightBinaryTree();
-        System.out.println();
-        bst.topBinaryTree();
 //        System.out.println(bst.BtToDll());
-//        System.out.println(bst.BtToLL());
+        System.out.println("binary tree to LinkedList");
+        bst.BtToLL();
         System.out.println(bst.diameterOftree());
         System.out.println(bst.height2());
         int[] inorder = {9,3,15,20,7}, postorder = {3,9,20,15,7};
 //        bst.display(bst.inOrderPreOrderToBt(inorder,postorder),"Root Node : ");
         bst.display(bst.inOrderPreOrderToBt2(inorder,postorder),"Root Node : ");
         bst.spiralTraversal();
-        System.out.println("LCA is "+bst.lca(15,22));
-        System.out.println("LCA efficient is "+bst.lca(15,0));
+        System.out.println("LCA is "+bst.lca(15,3));
+        System.out.println("LCA efficient is "+bst.lcaEfficient(15,7));
         bst.serializationToList();
         bst.display(bst.deserialization(),"ROOT node is :");
 

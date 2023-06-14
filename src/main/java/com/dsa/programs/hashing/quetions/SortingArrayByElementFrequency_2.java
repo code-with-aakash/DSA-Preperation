@@ -7,8 +7,12 @@ public class SortingArrayByElementFrequency_2 {
     public static void main(String[] args) {
 
         int[] arr = {4,5,5,4,6,4,4};
+        String s = "";
+        char[] ch = s.toCharArray();
 
         HashMap<Integer,Integer> hmap = new HashMap <>();
+
+
 
         for (int i: arr) {
 

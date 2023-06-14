@@ -1,4 +1,4 @@
-package com.java.basic.programs.array;
+package com.dsa.programs.array;
 
 public class MissingNumberInArray {
 

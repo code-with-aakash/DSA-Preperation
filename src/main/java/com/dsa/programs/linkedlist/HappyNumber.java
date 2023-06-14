@@ -4,7 +4,7 @@ public class HappyNumber {
 
 	public static void main(String[] args) {
 
-		int n = 19;
+		int n = 20;
 		System.out.println(isHappy(n));
 
 	}
@@ -21,9 +21,9 @@ public class HappyNumber {
 
 		} while (slow != fast);
 
-//		if (slow == 1) {
-//			return true;
-//		}
+		if (slow == 1) {
+			return true;
+		}
 
 		return false;
 	}

@@ -47,7 +47,7 @@ public class Tree {
             if(right){
                 System.out.println("Enter the value of right of "+node.value);
                 int value = scanner.nextInt();
-                node.right= new Node(value);
+                 node.right= new Node(value);
                 populate(scanner,node.right);
             }
 

@@ -1,4 +1,4 @@
-package com.dsa.programs.hashing.Leetcode;
+package com.dsa.programs.strings;
 
 import java.util.*;
 
