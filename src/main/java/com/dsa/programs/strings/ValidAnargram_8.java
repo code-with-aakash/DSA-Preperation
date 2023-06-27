@@ -3,7 +3,7 @@ package com.dsa.programs.strings;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class ValidAnargram {
+public class ValidAnargram_8 {
 
     public static void main(String[] args) {
 

@@ -72,9 +72,13 @@ public class MergeSortInPlace {
 		}
 
 		// to copy only the part array here not the entire array .
-		for (int l = 0; l < mix.length; l++) {
-			arr[start + l] = mix[l];
-		}
+		// here start comes from the merge method
+		// here we are copying the elements from arr to our new array mix and copying from index 0 to till start
+		// and till length of mix.length
+		System.arraycopy(mix, 0, arr, start, mix.length);
+//		for (int l = 0; l < mix.length; l++) {
+//			arr[start + l] = mix[l];
+//		}
 
 		return arr;
 	}

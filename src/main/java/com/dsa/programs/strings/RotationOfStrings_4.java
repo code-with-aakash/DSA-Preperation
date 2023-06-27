@@ -1,6 +1,6 @@
 package com.dsa.programs.strings;
 
-public class RotationOfStrings {
+public class RotationOfStrings_4 {
 
     public static void main(String[] args) {
 

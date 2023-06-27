@@ -1,6 +1,6 @@
 package com.dsa.programs.strings;
 
-public class ValidPalindrome {
+public class ValidPalindrome_9 {
 
     public static void main(String[] args) {
 

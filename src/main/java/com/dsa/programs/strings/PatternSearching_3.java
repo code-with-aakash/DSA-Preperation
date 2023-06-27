@@ -1,6 +1,6 @@
 package com.dsa.programs.strings;
 
-public class PatternSearching {
+public class PatternSearching_3 {
 
     public static void main(String[] args) {
 

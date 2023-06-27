@@ -2,7 +2,7 @@ package com.dsa.programs.strings;
 
 import java.util.*;
 
-public class NonRepeatingcharacter {
+public class NonRepeatingcharacter_2 {
 
     public static void main(String[] args) {
 
@@ -15,7 +15,7 @@ public class NonRepeatingcharacter {
         }
 
         System.out.println(hset);
-        // search in for loop now foor index with key from map whose value is 1
+        // search in for loop now for index with key from map whose value is 1
 
         // efficient solution
         int ans = Integer.MAX_VALUE;

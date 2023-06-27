@@ -8,7 +8,7 @@ public class SubArrayWithGivenSum7 {
 
     public static void main(String[] args) {
 
-        int[] arr ={1,2,3,4,-1};
+        int[] arr ={1,2,3};
         int sum =3;
 
         HashSet<Integer> hset = new HashSet<>();
@@ -27,7 +27,7 @@ public class SubArrayWithGivenSum7 {
                 System.out.println("true");
                 count++;
             }
-            if (pre_sum == 0) {
+            if (pre_sum == sum) {
                 count++;
                 System.out.println("true");
             }

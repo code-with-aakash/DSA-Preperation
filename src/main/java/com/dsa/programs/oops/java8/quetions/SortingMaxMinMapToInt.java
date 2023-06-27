@@ -29,6 +29,8 @@ public class SortingMaxMinMapToInt {
         emplist.stream().sorted((o1,o2)->o2.getSalary()-o1.getSalary()).skip(3).collect(Collectors.toSet()).forEach(System.out::println);
 
 
+
+
         // minimum
         System.out.println(emplist.stream().mapToInt(e-> e.getAge()).summaryStatistics().getMin());
 

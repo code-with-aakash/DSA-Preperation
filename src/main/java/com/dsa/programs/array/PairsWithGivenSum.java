@@ -1,6 +1,6 @@
 package com.dsa.programs.array;
 
-public class PairsWithGivenSum {
+   public class PairsWithGivenSum {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -5,7 +5,7 @@ public class Sort01and2 {
     public static void main(String[] args) {
 
         int[] nums = {2,0,2,1,1,0};
-        int red=0, white=0,  blue=0;
+
         int p1 = 0, p2 = nums.length - 1, index = 0;
         while (index <= p2) {
             if (nums[index] == 0) {

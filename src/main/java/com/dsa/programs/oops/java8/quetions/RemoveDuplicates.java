@@ -14,6 +14,8 @@ public class RemoveDuplicates {
         Set<Integer> set = new HashSet <>();
 
         // here we are entering duplicate elements in hashset and then printing it .
-        list.stream().filter(x-> !set.add(x)).collect(Collectors.toSet()).forEach(x-> System.out.println(x));
+//        list.stream().filter(x-> !set.add(x)).collect(Collectors.toSet()).forEach(System.out::println);
+        System.out.println(list.stream().distinct().collect(Collectors.toList()));;
+
     }
 }

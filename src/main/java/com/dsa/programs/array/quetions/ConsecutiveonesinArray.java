@@ -9,13 +9,13 @@ public class ConsecutiveonesinArray {
         int res=0;
         int curr=0;
         int n =arr.length;
-        for (int i = 0; i < n; i++) {
+        for (int j : arr) {
 
-            if(arr[i]==0){
-                curr=0;
-            }else{
+            if (j == 0) {
+                curr = 0;
+            } else {
                 curr++;
-                res=Math.max(res,curr);
+                res = Math.max(res, curr);
 
             }
         }

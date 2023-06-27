@@ -11,8 +11,14 @@ public class FirstCapitalLetter {
 	}
 
 	private static void firstcapital(String s) {
-		
-		
+
+		for (int i = 0; i < s.length(); i++) {
+
+			if(s.charAt(i)>='A' && s.charAt(i)<='Z'){
+				System.out.println(i);
+			}
+
+		}
 		
 		
 		

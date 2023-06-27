@@ -28,7 +28,7 @@ public class DistinctCharacterSubstring {
         for (int j = 0; j < n; j++) {
 
             // Find the last index of str[j]
-            // Update i (starting index of current window)
+             // Update i (starting index of current window)
             // as maximum of current value of i and last
             // index plus 1
             i = Math.max(i, lastIndex[s.charAt(j)-'a'] + 1);

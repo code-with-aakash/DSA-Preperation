@@ -1,6 +1,6 @@
 package com.dsa.programs.strings;
 
-public class LeftMostCharacter {
+public class LeftMostCharacter_1 {
 
     public static void main(String[] args) {
 

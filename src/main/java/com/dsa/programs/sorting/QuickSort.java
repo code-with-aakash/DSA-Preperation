@@ -6,7 +6,7 @@ public class QuickSort {
 
 	public static void main(String[] args) {
 
-		int[] arr = { 5, 4, 3, 2, 1 };
+		int[] arr = { -1,2,-8,-10};
 		quick(arr, 0, arr.length-1);
 		System.out.println(Arrays.toString(arr));
 
@@ -14,7 +14,7 @@ public class QuickSort {
 
 	static void quick(int[] arr, int low, int high) {
 
-		if (high - low == 1) {
+		if (high <low ) {
 			return;
 		}
 

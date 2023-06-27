@@ -13,10 +13,11 @@ public class LengthUsingRecursion {
 
 	private static int lengthofString(String str) {
 
-		if(str.equalsIgnoreCase(""))
+		if(str.isEmpty())
 			return 0;
-		else 
-		return 1+ lengthofString(str.substring(1));
+		else {
+			return 1 + lengthofString(str.substring(1));
+		}
 		
 	}
 

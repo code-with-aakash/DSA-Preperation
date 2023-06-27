@@ -2,13 +2,13 @@ package com.dsa.programs.array;
 
 public class GoodPairs {
 //    Given an array of integers nums, return the number of good pairs.
-//
-//            A pair (i, j) is called good if nums[i] == nums[j] and i < j.
+
+//    A pair (i, j) is called good if nums[i] == nums[j] and i < j.
 
     public static void main(String[] args) {
 
         int[] arr = {1,1,1,1};
-        pairs(arr);
+        System.out.println(pairs(arr));
 
     }
 

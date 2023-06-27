@@ -19,10 +19,6 @@ public class ContainsDuplicates {
 
         }
 
-        if(count>nums.length){
-            isrepeat = true;
-        }
-
         System.out.println("is repeat +-->"+isrepeat);
 
     }

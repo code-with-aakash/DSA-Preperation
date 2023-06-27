@@ -6,9 +6,9 @@ public class LongestSubArrayWithGivenSum_8 {
 
     public static void main(String[] args) {
 
-        int[] arr = {5,8,-4,-4,9,-2,2};
+        int[] arr = {2,1,3,4,5,6};
 
-        int sum =0;
+        int sum =10;
         int res=0;
         // naive method
         for (int i = 0; i < arr.length; i++) {

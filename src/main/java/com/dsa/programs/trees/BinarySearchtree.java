@@ -19,6 +19,13 @@ class BinarySearchtree {
         public int getValue() {
             return value;
         }
+
+        public Node(int value, Node left, Node right) {
+            this.value = value;
+            this.left = left;
+            this.right = right;
+
+        }
     }
 
     private Node root;
@@ -826,6 +833,26 @@ class BinarySearchtree {
         return node;
 
     }
+    
+    
+    public Node arrayTobst(int[] arr, int s , int e){
+
+        if(s>e){
+            return null;
+        }
+
+        int mid = s+(e-s)/2;
+
+
+        Node left = arrayTobst(arr,s,mid-1);
+        Node right = arrayTobst(arr,mid+1,e);
+
+        int data = arr[mid];
+        Node root = new Node(data,left,right);
+        return root;
+
+
+    }
 
 }
 
@@ -873,6 +900,8 @@ class Main {
         System.out.println("LCA efficient is "+bst.lcaEfficient(15,7));
         bst.serializationToList();
         bst.display(bst.deserialization(),"ROOT node is :");
+        int[] arr2 = {1,2,3,4,5,6,7};
+        bst.display(bst.arrayTobst(arr2,0,arr2.length-1),"ROOT node is :");
 
 
     }

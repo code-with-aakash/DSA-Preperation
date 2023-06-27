@@ -16,7 +16,7 @@ public class SieveOfErothstheness {
 		for (int p = 2; p * p <= n; p++) {
 			// If prime[p] is not changed, then it is a
 			// prime
-			if (prime[p] == true) {
+			if (prime[p]) {
 				// Update all multiples of p greater than or
 				// equal to the square of it numbers which
 				// are multiple of p and are less than p^2

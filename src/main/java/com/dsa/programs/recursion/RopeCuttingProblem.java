@@ -27,7 +27,7 @@ public class RopeCuttingProblem {
 
 		// here the idea is we will take maximum of these three cases which will call
 		// recursively for n-a,n-b,n-c and add 1 to it result as we are returning zero
-		// even if we are getting the annswer
+		// even if we are getting the answer
 		int res = Math.max(cutRope(n - a, a, b, c), Math.max(cutRope(n - b, a, b, c), cutRope(n - c, a, b, c)));
 
 		if (res == -1)

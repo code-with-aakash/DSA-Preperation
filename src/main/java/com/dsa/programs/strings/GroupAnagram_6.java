@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-public class GroupAnagram {
+public class GroupAnagram_6 {
 
     public static void main(String[] args) {
 
@@ -34,8 +34,9 @@ public class GroupAnagram {
 
         for (int i = 0; i < str.length; i++) {
             String key ="";
-
-             Arrays.sort(str[i].toCharArray());
+            // here we are creating key value pair .key is the sorted value of string and
+            // value is arraylist of the strings which are same to this key after sorting it.
+            Arrays.sort(str[i].toCharArray());
             key = str[i];
             if(hm.containsKey(key)){
                 hm.get(key).add(str[i]);
