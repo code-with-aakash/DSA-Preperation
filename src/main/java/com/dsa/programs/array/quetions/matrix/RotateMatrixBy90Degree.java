@@ -13,14 +13,18 @@ public class RotateMatrixBy90Degree {
         // i,j reverse with j,i
         int[][] arr ={{1,2,3},{4,5,6},{7,8,9}};
 
+//        int[][] temp = new int[arr.length][arr.length];
+
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i; j < arr[i].length; j++) {
+            for (int j = 0; j < arr[i].length; j++) {
 
                     swap(arr, i, j);
+//            	temp[j][i] = arr[i][j];
 
 
             }
         }
+//        arr=temp;
 
 
         for (int[] ints : arr) {

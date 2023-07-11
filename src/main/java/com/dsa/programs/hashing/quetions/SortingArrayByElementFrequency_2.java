@@ -24,10 +24,22 @@ public class SortingArrayByElementFrequency_2 {
         ArrayList<Integer> arList = new ArrayList<>(hmap.keySet());
 
         System.out.println(arList);
-        Collections.sort(arList,(a,b)->{
-            // if both are equal then return b first then return a else return a first and then b
-            return ( Objects.equals(hmap.get(a), hmap.get(b)) ? b-a:hmap.get(a)-hmap.get(b));
+        
+        arList.sort((o1, o2) -> {
+            if (o1.compareTo(o2) < 0)
+                return -1;
+            else if (o1.compareTo(o2) > 0)
+                return 1;
+            else
+                return 0;
         });
+//        arList.sort((a,b)->{
+//        	return ( Objects.equals(hmap.get(a), hmap.get(b)) ? b-a:hmap.get(a)-hmap.get(b));
+//        });
+//        Collections.sort(arList,(a,b)->{
+//            // if both are equal then return b first then return a else return a first and then b
+//            return ( Objects.equals(hmap.get(a), hmap.get(b)) ? b-a:hmap.get(a)-hmap.get(b));
+//        });
 
         System.out.println(arList);
 

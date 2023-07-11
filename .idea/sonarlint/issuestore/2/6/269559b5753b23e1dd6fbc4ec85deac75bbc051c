@@ -1,0 +1,22 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Áš“
+t
+java:S2293	"YReplace the type specification in this constructor call with the diamond operator ("<>").(şĞ«€üÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÕÂÒııÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù‚Ğ´ùÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù‚Ğ´ùÿÿÿÿ
+k	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§×Ñûÿÿÿÿ
+k	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶…Âşÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(Ù‚Ğ´ùÿÿÿÿ
+`
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(¨Äƒüÿÿÿÿ8¥´¾î1
+S	java:S106""9Replace this use of System.out or System.err by a logger.(µŸŞ…şÿÿÿÿ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(Î—ƒ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(÷î‡±øÿÿÿÿ
+E
+java:S1197*"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+?
+java:S1197+"*Move the array designators [] to the type.(°Â<

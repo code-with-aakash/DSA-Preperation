@@ -17,7 +17,7 @@ public class SubArrayWithGivenSum7 {
         int count=0;
         for (int j : arr) {
 
-            if (j == sum) {
+            if (j == sum) { 
                 count++;
                 System.out.println("true");
             }

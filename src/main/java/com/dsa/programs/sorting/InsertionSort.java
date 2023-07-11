@@ -8,7 +8,7 @@ public class InsertionSort {
 
         int[] arr ={5,4,3,2,1};
 
-        // here we are sorting the array by comparing the adjecent element
+        // here we are sorting the array by comparing the adjacent element
         // the trick is we are sorting array at particular index from i to j
         // in first iteration it will sort 0 to 1 index
         // in 2nd iteration it will sort 0 to 2 index and continue.

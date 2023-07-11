@@ -13,6 +13,11 @@ public class XORofAllNumbers {
 		}
 
 		System.out.println(sum);
+		
+		// to convert to integer from binary 
+		int l =Integer.parseInt("0101", 2);
+		
+		System.out.println(l);
 
 		// better solution this is of different question
 

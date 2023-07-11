@@ -14,7 +14,7 @@ public class ArraySubSetwithLoop {
 	}
 
 	private static List<List<Integer>> subset(int[] a) {
-
+ 
 		List<List<Integer>> outerlist = new ArrayList<>();
 
 		// first empty list created

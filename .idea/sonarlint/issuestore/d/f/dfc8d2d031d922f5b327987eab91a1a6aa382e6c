@@ -1,0 +1,8 @@
+
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(Æ¤İşÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(ßøÑ¢ÿÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(™¶şæ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(ÄË»›
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(Æ¤İşÿÿÿÿ
+D
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›

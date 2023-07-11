@@ -32,6 +32,7 @@ public class SortingMaxMinMapToInt {
 
 
         // minimum
+        // map to int resturns stream of int
         System.out.println(emplist.stream().mapToInt(e-> e.getAge()).summaryStatistics().getMin());
 
         // maximum

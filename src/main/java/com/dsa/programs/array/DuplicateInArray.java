@@ -45,7 +45,7 @@ public class DuplicateInArray {
 			araylist.add(-1);
 		} else {
 
-			System.out.println(araylist.toString());
+			System.out.println(araylist );
 		}
 
 	}
